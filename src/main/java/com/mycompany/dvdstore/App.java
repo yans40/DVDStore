@@ -5,9 +5,6 @@ import com.mycompany.dvdstore.service.MovieService;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- */
 public class App {
 
 
@@ -19,7 +16,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         String title = sc.nextLine();
 
-        System.out.println("saisir le genre :");
+        System.out.println("saisir le genre du film :");
         String genre = sc.nextLine();
 
         movie.setTitle(title);
