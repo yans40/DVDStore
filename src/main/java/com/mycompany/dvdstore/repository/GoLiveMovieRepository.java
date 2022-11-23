@@ -11,10 +11,7 @@ public class GoLiveMovieRepository {
         FileWriter writer;
         try{
             writer=new FileWriter("C:\\temp\\movies.txt",true);
-            writer.write(movie.getTitle());
-            writer.write(" ; ");
-            writer.write(movie.getGenre());
-            writer.write("\n");
+            writer.write(movie.getTitle()+" ; "+ movie.getGenre()+" \n");
             writer.close();
         }
         catch (IOException e){
